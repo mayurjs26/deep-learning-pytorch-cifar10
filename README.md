@@ -1,32 +1,41 @@
-# CIFAR-10 Image Classification
+CIFAR-10 Image Classification with CNN and Batch Normalization
+This project implements a convolutional neural network (CNN) with batch normalization for image classification on the CIFAR-10 dataset. It utilizes PyTorch libraries and techniques for efficient training and evaluation.
 
-This repository contains code for a Convolutional Neural Network (CNN) model implemented in PyTorch for image classification on the CIFAR-10 dataset. The model is designed to classify images into one of the ten predefined classes.
+Project Highlights:
 
-## Table of Contents
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+Achieved a validation accuracy of 88.2% after 10 epochs of training.
+Employed batch normalization for better performance and reduced overfitting.
+Leveraged efficient PyTorch libraries for training and evaluation.
+Installation:
 
-## Overview
+This project requires the following libraries:
 
-The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 different classes, with 6,000 images per class. The goal is to train a CNN model to accurately classify these images.
+PyTorch
+torchvision
+numpy
+matplotlib
+Install the required libraries using pip:
 
-## Prerequisites
+pip install torch torchvision numpy matplotlib
+Getting Started:
 
-Before running the code, ensure you have the following installed:
+Download the CIFAR-10 dataset:
+python -m datasets download cifar10
+Run the script:
+python main.py
+Code Structure:
 
-- Python (3.6 or later)
-- PyTorch
-- torchvision
-- Matplotlib
+main.py: The main script that defines the model, training loop, and evaluation process.
+ImageClassificationBase.py: A base class for image classification models with common training and validation steps.
+CIFAR_CNN.py: The CNN model architecture specifically designed for the CIFAR-10 dataset.
+utils.py: Utility functions for device allocation and data loading.
+Project Contributions:
 
-You can install the required dependencies using:
+This project is a learning exercise for implementing CNNs with batch normalization for image classification.
+It serves as a baseline model for further experimentation and improvement.
+The code is well-structured and documented for easy understanding and modification.
+Future Work:
 
-```bash
-pip install -r requirements.txt
+Explore different CNN architectures and hyperparameters for improved performance.
+Implement data augmentation techniques to increase training data diversity.
+Evaluate the model on other image classification datasets.
